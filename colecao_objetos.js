@@ -1,4 +1,5 @@
 //Coleção de objetos segue a sintaxe: var = [{}]
+//As propriedades são formadas por -> chave: valor,
 var curiosidades_chuck_norris = [
   { titulo: "Cuidados com a higiene bucal",           conteudo: "Chuck Norris usa arame farpado como fio dental."},
   { titulo: "Fórmula para maratonar séries",          conteudo: "Chuck Norris pode assistir um episódio de 60 minutos em 22 segundos."},
