@@ -2,7 +2,7 @@ var notas_bimestre = [
   7, 6, 8, 5
 ];
 
-//Passando o tamnaho do array para a variável total_notas
+//Passando o tamanho do array para a variável total_notas
 var total_notas = notas_bimestre.length;
 
 //Somando todas as notas e atribuindo o valor a variável soma_notas

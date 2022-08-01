@@ -29,7 +29,7 @@ var frases_do_dia = [
   "Coloque fé onde falta coragem",
   "Levanta, sacode a poeira e dá a volta por cima",
   "O que vale a pena possuir, vale a pena esperar",
-  "A esperança é o sonho do homem acordado"
+  "A esperança é o sonho do homem acordado",
 ];
 
 //Atribuindo um novo valor ao índice 5

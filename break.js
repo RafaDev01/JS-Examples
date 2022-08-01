@@ -26,7 +26,7 @@ while ( contador < funcionarios.length ) {
   contador++;
 }
 
-//caso não tenha ebcontrado ninhuem habilitado após percorrer o objeto:
+//caso não tenha encontrado nenhum habilitado após percorrer o objeto:
 if (!encontrouHabilitado) {
   console.log("Nenhum funcionário habilitado encontrado");
 }
