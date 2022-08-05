@@ -4,6 +4,7 @@ const produtos = [
   { id: 3, nome: 'Luvas descartáveis', estoque: 1000, valor: 2.50 },
 ];
 
+
 function imprimirProduto (produto, index) {
   console.log( index + ' - ' + produto.nome );
 }
