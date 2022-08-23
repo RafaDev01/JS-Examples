@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+</head>
+<body>
+  
+  <p>Conteudo html</p>
+
+  <script>
+
+    /*
+      <html> corresponde a document.documentElement
+      <head> corresponde a document.head
+      <body> corresponde a document.body     
+    */
+
+  </script>
+
+  
+  <script>
+    //Acessando o p da pagína
+      console.log(document.body.childNodes);
+      document.body.childNodes[1].innerText = "Novo paragrafo";
+      document.body.childNodes[1].textContent = "Novo 2";
+
+      //buscando a lang da página
+      console.log(document.documentElement.lang)
+  </script>
+
+</body>
+</html>
