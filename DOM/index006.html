@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div h1 {
+      margin: 0;
+    }
+    div {
+      box-shadow: 2px 2px rgba(204, 204, 204, 0.614);
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0 ;
+      width: 400px;
+      height: 380px;
+      border: solid 1px #ccc;
+      background-color: #ccc;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="noticia">
+    <h1>Titulo da notícia</h1>
+    <h3 id="sumario" >Sumário da notícia</h3>
+    <img src="img/news_1.jpg" alt="imagem da noticia">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam porro fuga sint culpa ipsam veniam temporibus, providen</p>
+  </div>
+
+  <script>
+
+    let elemento = document.querySelector('h3');
+
+    // hasAttributo
+    if(elemento.hasAttribute('id')){
+      console.log('sim')
+    }
+
+    // getAttribute
+    console.log(elemento.getAttribute('id'));
+
+    // setAttribute
+    console.log(elemento.setAttribute('title', 'Titulo do sumárioaaaaa'))
+
+    // removeAttribute
+    let imagem = document.querySelector('img');
+    //imagem.removeAttribute('src');
+
+    //Attributes
+    console.log(imagem.attributes[1])
+  
+
+
+  </script>
+
+</body>
+</html>

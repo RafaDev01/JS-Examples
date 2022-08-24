@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <h3 id="titulo">Este texto tem <i><u>importancia</u></i></h3>
+  <div class="noticia">
+    <h1>Título da notícia <strong>um</strong></h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam hic ea aspernatur ipsa delectus quis, eligendi quasi alias distinctio ipsum qui. Nulla iste asperiores ullam reprehenderit tempora. Assumenda, molestias at.</p>
+  </div>
+
+  <div>
+    <h1>Título da notícia 2</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta ipsum deleniti, earum corrupti, eos in a atque nihil soluta, temporibus saepe amet minus ad fuga quae nobis assumenda perspiciatis cupiditate?</p>
+  </div>
+
+  <img src="img/news_1.jpg" alt="Notíciassdadasdas" id="noticias">
+
+  <script>
+
+    //let elemento = document.querySelector("#titulo > i > u");
+    //elemento.style.backgroundColor = "red";
+    //console.log(elemento);
+
+    // innerHTML -> mostra o texto dentro da tag, se tiver outra tag dentro desse texto tambem sera mostrada
+    // outerHTML -> mostra a estrutura completa desde a tag até o texto
+    // innerText -> mostra apenas o texto(ignora o html(tags))
+
+    //let elemento = document.querySelector('.noticia > h1');
+    //elemento.innerHTML = "Novo <u>texto</u>"
+    //mostrando o strong existente
+    //console.log(elemento.outerHTML)
+
+    // atributos
+    let imagem = document.querySelector('#noticias');
+    console.log(imagem)
+    imagem.src = "img/news_2.jpg";
+    console.log(imagem.alt);
+
+    document.querySelector("#titulo").innerHTML = imagem.alt
+
+    // operações no console
+  </script>
+
+</body>
+</html>
