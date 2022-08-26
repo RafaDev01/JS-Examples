@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=,, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .p-1 {
+      background-color: yellow;
+    }
+    .p-2 {
+      background-color: green;
+    }
+    .espaco {
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <p class="espaco">Lorem ipsum dolor sit amet consectetur.</p>
+
+  <script>
+
+    let p = document.querySelector('p');
+    //--permite ler a propriedade do atributo e tambem alterar as classes do elemento
+    //p.className = 'p-2 espaco'
+
+    p.classList.add('p-2')
+    p.classList.remove('espaco')
+
+    //removendo ou adicionando(se ja existir remove senao adiciona)
+    p.classList.toggle('espaco');
+
+    //verificando se possui a prorpiedade
+    if(p.classList.contains('espaco')) {
+      console.log('tem espaco')
+    } else {
+      console.log('Não tem')
+    }
+
+  </script>
+  
+</body>
+</html>

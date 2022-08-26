@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    h1 {
+      background-color: gray;
+      color: blueviolet;
+      padding: 10px;
+      border: 1px solid red;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+  
+  <p style="color: blue; margin: 50px;">Lorem ipsum dolor sit amet consectetur.</p>
+
+  <script>
+    //como saber as propriedades que um elemento html tem inline
+    let p = document.querySelector('p');
+    console.log(p.style.color)
+    console.log(p.style.marginBottom)
+    
+    //quando nao for inline use computed style
+
+
+    let propriedades = getComputedStyle(document.querySelector('h1'));
+    console.log(propriedades.color)
+
+  </script>
+
+</body>
+</html>

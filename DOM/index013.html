@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+    div {
+      width: 300px;
+      height: 200px;
+      padding: 20px;
+      margin: 50px auto;
+      background-color: lightblue;
+      overflow: auto;
+    }
+
+  </style>
+</head>
+<body>
+  
+  <div>
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla pariatur nobis non explicabo incidunt natus eveniet accusantium quam eos dignissimos mollitia ad iusto ex sit esse, nostrum repudiandae nemo? Enim necessitatibus veritatis sint temporibus. Eaque molestiae hic voluptatum illum assumenda, illo facilis? Voluptatum deserunt debitis unde enim quas, nisi dolorum quo expedita nulla assumenda necessitatibus autem aut commodi corrupti hic ducimus nesciunt eum similique soluta? Similique, voluptate error. Suscipit eum, tenetur maxime fugit minus laboriosam delectus veniam dicta officiis magnam rerum provident atque deserunt tempora, ipsam dolor placeat voluptates perspiciatis incidunt tempore ut. Velit veniam sed deleniti fuga asperiores facere est ratione minus odit omnis enim deserunt recusandae placeat vero aperiam nulla assumenda quam dolorum ipsa porro laboriosam, quis earum eaque sit. Natus esse illo corrupti corporis libero aut ipsa! Consectetur alias fuga tempore ex veniam, soluta quibusdam eveniet eius a quam mollitia dolorem, quidem delectus. Magnam perferendis neque totam?
+  </div>
+
+  <p id="propriedades"></p>
+  <button onclick="buscar_propriedades()">Executar</button>
+
+  <script>
+
+    function buscar_propriedades(){
+      let div = document.querySelector('div');
+      let p = document.querySelector('#propriedades');
+
+      let resultados = '';
+      //mostrando a distancia de cada parte do elemento
+      resultados += "offsetLeaft: " + div.offsetLeft + ' '
+      resultados += "offsetTop: " + div.offsetTop + ' '
+      resultados += "offsetWidth: " + div.offsetWidth + ' '
+      resultados += "offsetHeigth: " + div.offsetHeight + ' '
+
+      //distancia do scroll do top
+      resultados += "scrolltop: " + div.scrollTop + ' '
+      //tamanho do scroll
+      resultados += "scrollHeigth: " + div.scrollHeight + ' '
+
+      p.textContent = resultados;
+
+    }
+
+  </script>
+
+</body>
+</html>
