@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div{
+      margin-bottom: 10px;
+    }
+
+    .focus{
+      background-color: red;
+    }
+  </style>
+</head>
+<body>
+
+  <form action="#" method="post" name="formulario">
+
+    <div>
+      <label for="usuario">Usuário</label>
+      <input type="text" name="usuario" id="usuario">
+    </div>
+    <div>
+      <label for="senha">Senha</label>
+      <input type="password" name="senha" id="senhaaaaa" autofocus>
+    </div>
+    <div>
+      <input type="submit" value="Entrar">
+    </div>
+  </form>
+  
+  <script>
+
+    let usuario = document.querySelector('[name="usuario"]')
+    let senha = document.querySelector('[name="senha"]')
+
+    //focus == entrar no input
+    usuario.addEventListener('focus', (e) => {
+      e.target.classList.add('focus')
+    })
+
+    senha.addEventListener('focus', (e) => {
+      e.target.classList.add('focus')
+    })
+
+    //blur ==  sair do input
+    usuario.addEventListener('blur', (e) => {
+      e.target.classList.remove('focus')
+      if(usuario.value == 'joao'){
+        console.log('OK!!!!!')
+      }
+    })
+
+    senha.addEventListener('blur', (e) => {
+      e.target.classList.remove('focus')
+    })
+
+    
+
+  </script>
+  
+</body>
+</html>

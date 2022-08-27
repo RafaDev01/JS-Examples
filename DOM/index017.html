@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Título</h1>
+
+  <button>Adicionar fundo amarelo</button>
+
+  <script>
+    let botao = document.querySelector('button').onclick = () => {
+      let elemento = document.querySelector('h1');
+      let texto = document.querySelector('button');
+
+      if(elemento.style.backgroundColor == ""){
+        elemento.style.backgroundColor = "yellow"
+        texto.textContent = "Novo texto"
+      } else {
+        elemento.style.backgroundColor = ""
+        texto.textContent = "Adicionar fundo amarelo"
+      }
+    }
+
+
+
+    
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    h1 {
+      margin: 50px auto;
+    }
+
+    .centrar {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="centrar">
+    <h1>Texto original de html</h1>
+    <button onclick="alterar_texto()">Click</button>
+    <p>Tambem posso clicar aqui</p>
+  </div>
+  <script>
+    //evento sem precisar passar a funcao no html
+    document.querySelector('p').onclick = function (){
+      document.querySelector('h1').textContent = 'Evento onclick no paragrafo'
+    }
+
+    //função precisa ser chamada no html para funcionar
+    function alterar_texto() {
+      document.querySelector('h1').textContent = 'Texto alterado no evento'
+    }
+  </script>
+  
+</body>
+</html>

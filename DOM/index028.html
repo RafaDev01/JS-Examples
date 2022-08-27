@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div{
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <form action="#" method="post" name="formulario">
+    <div>
+      <label for="tarefa">Tarefa</label>
+      <input type="text" name="tarefa">
+    </div>
+    <div>
+      <label for="duracao">Quanto tempo</label>
+      <select name="duracao">
+        <option value="1">1 dia</option>
+        <option value="2">2 dias</option>
+        <option value="3">3 dias</option>
+      </select>
+    </div>
+  </form>
+
+  <script>
+
+    
+    let tarefa = document.querySelector('[name="tarefa"]');
+    let duracao = document.querySelector('[name="duracao"]');
+    /*
+    //change -> acontece quando o vlaor que esta dentro do input é alterado 
+    tarefa.addEventListener('change', ()=> {
+      console.log('alterado')
+    })
+
+    duracao.addEventListener('change', ()=> {
+      console.log('alterado')
+    })
+    */
+    
+    /*
+    //input -> cada elemento adicionado chama o event input
+    tarefa.addEventListener('input', ()=> {
+      console.log('introduzido')
+    })
+    */
+
+    /*
+    //cut -> é disparado quando recortamos
+    tarefa.addEventListener('cut', ()=> {
+      console.log('recortado')
+    })
+    */
+
+    /*
+    //copy -> diparado quando copiamos caracteres
+    tarefa.addEventListener('copy', ()=> {
+      console.log('copiado')
+    })
+    */
+    
+    //paste -> quando o usuario cola algo
+    tarefa.addEventListener('paste', ()=> {
+      console.log('colado')
+    })
+
+
+
+
+  </script>
+  
+</body>
+</html>

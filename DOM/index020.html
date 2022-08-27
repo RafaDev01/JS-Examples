@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    
+    *{
+      margin: 0;
+      box-sizing: border-box;
+      padding: 0;
+    }
+    
+    div {
+      background-color: yellow;
+      padding: 30px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    Essa é minha div
+  </div>
+
+  <script>
+
+    document.querySelector('div').addEventListener('mousemove', () => {
+      //cordenadas do local do mouse
+      console.log(event.pageX + " " + event.pageY)
+
+      if(event.pageX <= 100){
+        event.target.style.backgroundColor ="black";
+      } else if(event.pageX >= 600) {
+        event.target.style.backgroundColor ="red";
+      } else {
+        event.target.style.backgroundColor ="yellow";
+      }
+    })
+
+  </script>
+
+  
+</body>
+</html>

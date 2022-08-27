@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div {
+      background-color: yellow;
+      padding: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <div>
+    Essa é minha div
+  </div>
+
+  <script>
+
+    document.querySelector('div').addEventListener('mousedown', () => {
+      //console.log(event.button)
+
+      if(event.shiftKey){
+        console.log('OK shift')
+      }
+
+      if(event.altKey){
+        console.log('OK alt')
+      }
+
+      if(event.ctrlKey){
+        console.log('OK ctrl')
+      }
+
+      if(event.ctrlKey && event.shiftKey){
+        console.log('OK ctrl + shift')
+      }
+    })
+
+
+  </script>
+</body>
+</html>

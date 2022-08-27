@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+
+    //Esse evento não significa que todo o nosso html está completamente carregado, ele significa que será executado quando toda a estrutura do html estiver carregada -> estrutura são as tags -> documento completo é quando temos imgs, css, js
+    document.addEventListener('DOMContentLoaded', ()=> {
+      console.log('Documento carregado')
+    })
+
+    //o load so existe no window
+    window.addEventListener('load', ()=> {
+      console.log('documento completo')
+    })
+
+  </script>
+</head>
+<body>
+
+  <h1>Conteudo</h1>
+  
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+      border: solid black 1px;
+      margin: 100px auto;
+      width: 300px;
+      height: 300px;
+      align-items: center;
+      align-content: center;
+      display: flex;
+      padding: 40px;
+    }
+
+    div {
+      align-items: center;
+      align-content: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <form action="#" method="post" id="formulario">
+      <div>
+        <label for="usuario">Usuario</label>
+        <input type="text" name="text_usuario" >
+      </div>
+      <div>
+        <label for="senha">Senha</label>
+        <input type="password" name="text_senha">
+      </div>
+      <div>
+      <input type="submit" value="Enviar"> 
+      <!-- <button type="button">Enviar</button> --> 
+      <!--   <input type="image" src="img/news_1.jpg" alt="">  -->
+    </form>
+  </div>
+
+  <script>
+
+    let formulario = document.querySelector('#formulario');
+    formulario.addEventListener('submit', (event) => {
+      console.log('teste')
+
+      //efetuar verificações e validações
+      //Em caso de formulario OK -> submeter , caso contrario preventdefault
+
+      event.preventDefault()
+    })
+
+  </script>
+  
+</body>
+</html>
